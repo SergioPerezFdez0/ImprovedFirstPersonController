@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "displayName": "Improved First Person Character Controller",
     "description": "Improved First Person Character Controller",
-    "unity": "6000.0.29",
+    "unity": "6000",
     "dependencies": {
         "com.unity.cinemachine": "3.1.2",
         "com.unity.inputsystem": "1.11.2"
