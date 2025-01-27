@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace SPDev 
+namespace ImprovedFirstPersonController 
 {
     public class GetPlayerInputs : MonoBehaviour
     {

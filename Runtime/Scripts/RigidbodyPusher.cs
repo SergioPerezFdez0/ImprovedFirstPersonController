@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SPDev 
+namespace ImprovedFirstPersonController 
 {
     public class RigidbodyPusher : MonoBehaviour {
         public LayerMask pushLayers;
