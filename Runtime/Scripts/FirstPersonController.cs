@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace SPDev { 
+namespace ImprovedFirstPersonController { 
 
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(PlayerInput))]
