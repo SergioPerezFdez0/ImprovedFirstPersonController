@@ -12,9 +12,5 @@
         "name": "Sergio Pérez",
         "email" : "sergio.perez.fdez0@gmail.com",
         "url": "https://github.com/SergioPerezFdez0"
-    },
-    "files": [
-        "Runtime/",
-        "SPDev.asmdef"
-    ]
+    }
 }
