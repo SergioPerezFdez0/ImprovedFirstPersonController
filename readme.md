@@ -1,0 +1,65 @@
+### What is Improved First Person Character Controller?
+
+This project is an enhanced version of the [Unity asset Starter Assets - FirstPerson](https://assetstore.unity.com/packages/essentials/starter-assets-firstperson-updates-in-new-charactercontroller-pa-196525). It improves the base functionality by refining values, improving code clarity, enhancing the input system with additional keys and useful functions, introducing sliding mechanics, and upgrading to the latest version of Cinemachine with improved settings.
+
+### How to Install
+
+1. Copy the web URL of this repository ending with .git. 
+2. Open the Package Manager in Unity.
+3. Click the '+' button and select Install Package from Git URL.
+4. Paste the copied URL and click Install.
+5. Add <code>PlayerToUnpack.prefab</code> to the scene, right-click it, and select Prefab > Unpack Completely.
+6. Move <code>Main Camera</code>, <code>Cinemachine Follow Camera</code>, and <code>Player</code> to the top of the hierarchy.
+7. Delete <code>PlayerToUnpack</code> from the scene.
+8. Replace the original camera by removing it and using the newly added one.
+9. Create a <code>Player</code> layer and assign it to both <code>Player</code> and <code>PlayerCapsule</code> objects.
+
+### What does the original Unity package include?
+
+The original Unity package provides the following features:
+
+- Input System: Pre-configured to handle movement, looking around, jumping, and sprinting.
+
+- Character Controller: Three scripts that handle player movement and interaction.
+
+- Player Input: A dedicated script for processing player input actions.
+
+### What's Added?
+
+This improved version includes several enhancements and additional features, such as:
+
+- Expanded Input System:
+
+    - Attack functionality
+
+    - Interaction key
+
+    - Ground angle detection
+
+    - Automatic sliding on steep slopes
+
+    - Crouching
+
+- On-Screen Crosshair: Added for improved aiming and gameplay experience.
+
+- Code Optimization: The original scripts have been refined for better readability and performance.
+
+- Cinemachine Upgrade: Updated to the latest version (3.1.2), which includes major changes in classes and script structures.
+- Improved Prefab configuration.
+
+### What's Removed?
+
+Certain features from the original package have been removed to streamline and optimize the experience:
+
+- Arrow Key Movement: Removed to prioritize modern control schemes.
+
+- Analog Control for Gamepads: Removed for a simplified input handling approach.
+
+- UI Canvas overlays for mobile (Joystick and Touch Zone).
+
+- Playground Scene and level prototyping Prefabs.
+
+### Additional Information
+
+For further details or inquiries, feel free to reach out.
+📧 sergio.perez.fdez0@gmail.com
