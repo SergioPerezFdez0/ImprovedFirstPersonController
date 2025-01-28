@@ -4,15 +4,32 @@ This project is an enhanced version of the [Unity asset Starter Assets - FirstPe
 
 ### How to Install
 
+##### If no script changes are wanted:
 1. Copy the web URL of this repository ending with .git. 
 2. Open the Package Manager in Unity.
 3. Click the '+' button and select Install Package from Git URL.
 4. Paste the copied URL and click Install.
-5. Add <code>PlayerToUnpack.prefab</code> to the scene, right-click it, and select Prefab > Unpack Completely.
-6. Move <code>Main Camera</code>, <code>Cinemachine Follow Camera</code>, and <code>Player</code> to the top of the hierarchy.
-7. Delete <code>PlayerToUnpack</code> from the scene.
-8. Replace the original camera by removing it and using the newly added one.
-9. Create a <code>Player</code> layer and assign it to both <code>Player</code> and <code>PlayerCapsule</code> objects.
+5. Resources now should be in <code>Packages/com.spdev.improvedfirstpersoncontroller</code>.
+6. Add <code>Runtime/Prefabs/PlayerToUnpack.prefab</code> to the scene, right-click it, and select Prefab > Unpack Completely.
+7. Move <code>Main Camera</code>, <code>Cinemachine Follow Camera</code>, and <code>Player</code> to the top of the hierarchy.
+8. Delete <code>PlayerToUnpack</code> from the scene.
+9.  Replace the original camera by removing it and using the newly added one.
+10. Create a <code>Player</code> layer and assign it to both <code>Player</code> and <code>PlayerCapsule</code> objects.
+
+###
+##### If script changes are wanted:
+1. Copy the web URL of this repository ending with .git. 
+2. Clone this repository in your machine.
+3. Open the Package Manager in Unity.
+4. Click the '+' button and select Install Package from disk.
+5. Select package.json from the copied repository.
+6. Resources now should be in <code>Packages/improvedfirstpersoncontroller</code>.
+7. Select the three folders inside Runtime, cut and paste them in your desired Assets folder.
+8. Add <code>/Prefabs/PlayerToUnpack.prefab</code> to the scene, right-click it, and select Prefab > Unpack Completely.
+9. Move <code>Main Camera</code>, <code>Cinemachine Follow Camera</code>, and <code>Player</code> to the top of the hierarchy.
+10. Delete <code>PlayerToUnpack</code> from the scene.
+11. Replace the original camera by removing it and using the newly added one.
+12. Create a <code>Player</code> layer and assign it to both <code>Player</code> and <code>PlayerCapsule</code> objects.
 
 ### What does the original Unity package include?
 
