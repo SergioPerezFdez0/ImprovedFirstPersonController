@@ -1,6 +1,6 @@
 ### What is Improved First Person Character Controller?
 
-This project is an enhanced version of the [Unity asset Starter Assets - FirstPerson](https://assetstore.unity.com/packages/essentials/starter-assets-firstperson-updates-in-new-charactercontroller-pa-196525). It improves the base functionality by refining values, improving code clarity, enhancing the input system with additional keys and useful functions, introducing sliding mechanics, and upgrading to the latest version of Cinemachine with improved settings.
+This project is an enhanced version of the [Unity asset Starter Assets - FirstPerson](https://assetstore.unity.com/packages/essentials/starter-assets-firstperson-updates-in-new-charactercontroller-pa-196525). It improves the base functionality by refining values, improving code clarity, enhancing the input system with additional keys and useful functions, introducing sliding mechanics, and upgrading to the 3.1.2 version of Cinemachine with improved settings.
 
 ### How to Install
 
