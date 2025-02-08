@@ -1,6 +1,6 @@
 ### What is Improved First Person Character Controller?
 
-This project is an enhanced version of the [Unity asset Starter Assets - FirstPerson](https://assetstore.unity.com/packages/essentials/starter-assets-firstperson-updates-in-new-charactercontroller-pa-196525). It improves the base functionality by refining values, improving code clarity, enhancing the input system with additional keys and useful functions, introducing sliding mechanics, and upgrading to the 3.1.2 version of Cinemachine with improved settings.
+This project is an enhanced version of the [Unity asset Starter Assets - FirstPerson](https://assetstore.unity.com/packages/essentials/starter-assets-firstperson-updates-in-new-charactercontroller-pa-196525). It improves the base functionality by refining values, improving code clarity, enhancing the input system with additional keys and useful functions, sensitivity conversion from famous games like CSGO or Valorant, sliding mechanics, and upgrading to the 3.1.2 version of Cinemachine with improved settings.
 
 ### How to Install
 
@@ -11,7 +11,7 @@ This project is an enhanced version of the [Unity asset Starter Assets - FirstPe
 3. Add <code>Runtime/Prefabs/PlayerToUnpack.prefab</code> to the scene, right-click it, and select Prefab > Unpack Completely.
 4. Move <code>Main Camera</code>, <code>Cinemachine Follow Camera</code>, and <code>Player</code> to the top of the hierarchy.
 5. Delete the empty gameobject <code>PlayerToUnpack</code> from the scene.
-6.  Replace the original camera by removing it and using the newly added one.
+6. Replace the original camera by removing it and using the newly added one.
 7. Create a <code>Player</code> layer and assign it to both <code>Player</code> and <code>PlayerCapsule</code> objects.
 
 ###
@@ -60,6 +60,8 @@ This improved version includes several enhancements and additional features, suc
 
     - Attack functionality
 
+    - Possibility to convert sensitivity from famous games
+
     - Interaction key
 
     - Ground angle detection
@@ -73,6 +75,7 @@ This improved version includes several enhancements and additional features, suc
 - Code Optimization: The original scripts have been refined for better readability and performance.
 
 - Cinemachine Upgrade: Updated to the latest version (3.1.2), which includes major changes in classes and script structures.
+
 - Improved Prefab configuration.
 
 ### What's Removed?
@@ -86,6 +89,20 @@ Certain features from the original package have been removed to streamline and o
 - UI Canvas overlays for mobile (Joystick and Touch Zone).
 
 - Playground Scene and level prototyping Prefabs.
+
+### How do I bring the sensitivity from other game into Unity?
+
+- Change SensitivityConvertion inside the FirstPersonController.
+- Use a simple rule of 3 to translate some of the listed below SensitivityConvertion examples to a different game by getting the same sensitivity in https://www.mouse-sensitivity.com/
+
+- Here's some SensitivityConvertion values for some games:
+- CS:GO / APEX LEGENDS: <code>0.436</code>
+- VALORANT: <code>1.387</code>
+- FORTNITE: <code>0.11</code>
+- CALL OF DUTY MWIII / MWII / WARZONE 2.0: <code>0.131</code>
+
+Example: I myself have a CSGO sensitivity of 2.3625 so in Unity I have that sens in CameraSensitivity and 0.436 as SensitivityConvertion.
+If I wanted to use my Valorant sensitivity inside Unity now I should put 0.743 as CameraSensitivity and 1.387 as SensitivityConvertion
 
 ### Additional Information
 
