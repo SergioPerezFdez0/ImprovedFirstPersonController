@@ -15,7 +15,7 @@ This project is an enhanced version of the [Unity asset Starter Assets - FirstPe
 7. Create a <code>Player</code> layer and assign it to both <code>Player</code> and <code>PlayerCapsule</code> objects.
 
 ###
-##### Package Manager: If script changes are wanted:
+##### Package Manager: If further script changes are wanted:
 1. Copy the web URL of this repository ending with .git. 
 2. Clone this repository in your machine.
 3. Open the Package Manager in Unity.
