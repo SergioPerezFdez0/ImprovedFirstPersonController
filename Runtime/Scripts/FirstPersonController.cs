@@ -1,13 +1,11 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace ImprovedFirstPersonController { 
+namespace ImprovedFirstPersonController {
 
     [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(PlayerInput))]
-    public class FirstPersonController : MonoBehaviour
-    {
+    public class FirstPersonController : MonoBehaviour {
         [Header("References")]
         // This is the child object that will be used to deform when the player is crouching
         [SerializeField] private Transform ChildCapsule;
@@ -39,6 +37,7 @@ namespace ImprovedFirstPersonController {
 
         [Header("Camera Settings")]
         public float CameraSensitivity = 1.0f;
+        public float SensitivityConvertion = 0.436f;
         public float TopClamp = 90.0f;
         public float BottomClamp = -90.0f;
         public float CrouchedOffset = 0.5f;
@@ -214,7 +213,7 @@ namespace ImprovedFirstPersonController {
         }
 
         private void InteractAction() {
-            if(_input.interact) {
+            if (_input.interact) {
                 if (Physics.Raycast(_mainCamera.transform.position, _mainCamera.transform.forward, out RaycastHit hit, InteractionRange)) {
                     Debug.Log($"Interacted with: {hit.transform.name}");
                     Debug.DrawRay(_mainCamera.transform.position, _mainCamera.transform.forward * InteractionRange, Color.red, 10f);
@@ -245,9 +244,9 @@ namespace ImprovedFirstPersonController {
         private void CameraRotation() {
             if (_input.look.sqrMagnitude > 0) {
                 //Get rotation
-                _cinemachineTargetPitch += _input.look.y * CameraSensitivity;
+                _cinemachineTargetPitch += _input.look.y * CameraSensitivity * SensitivityConvertion;
                 _cinemachineTargetPitch = ClampAngle(_cinemachineTargetPitch, BottomClamp, TopClamp);
-                _rotationVelocity = _input.look.x * CameraSensitivity;
+                _rotationVelocity = _input.look.x * CameraSensitivity * SensitivityConvertion;
 
                 //Apply rotation
                 CameraTarget.transform.localRotation = Quaternion.Euler(_cinemachineTargetPitch, 0.0f, 0.0f);
