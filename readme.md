@@ -92,8 +92,8 @@ Certain features from the original package have been removed to streamline and o
 
 ### How do I bring the sensitivity from other game into Unity?
 
-- Change SensitivityConvertion inside the FirstPersonController.
-- Use a simple rule of 3 to translate some of the listed below SensitivityConvertion examples to a different game by getting the same sensitivity in https://www.mouse-sensitivity.com/
+- Change SensitivityConvertion inside the FirstPersonController to use the desired game's sensitivity system.
+- Use a simple rule of 3 to translate some of the listed below SensitivityConvertion examples to a different game by getting the same sensitivity in [Same Aim](https://www.mouse-sensitivity.com/)
 
 - Here's some SensitivityConvertion values for some games:
 - CS:GO / APEX LEGENDS: <code>0.436</code>
@@ -102,7 +102,8 @@ Certain features from the original package have been removed to streamline and o
 - CALL OF DUTY MWIII / MWII / WARZONE 2.0: <code>0.131</code>
 
 Example: I myself have a CSGO sensitivity of 2.3625 so in Unity I have that sens in CameraSensitivity and 0.436 as SensitivityConvertion.
-If I wanted to use my Valorant sensitivity inside Unity now I should put 0.743 as CameraSensitivity and 1.387 as SensitivityConvertion
+If I wanted to use my Valorant sensitivity inside Unity, now I should put 0.743 as CameraSensitivity (obtained by using [Same Aim](https://www.mouse-sensitivity.com/))and 1.387 as SensitivityConvertion.
+Id I wanted to get the SensitivityConvertion of Overwatch, I would go to [Same Aim](https://www.mouse-sensitivity.com/), get my sensitivity in that game (7.88) and apply a rule of 3, getting as 0.131 Overwatch's SensitivityConvertion
 
 ### Additional Information
 
