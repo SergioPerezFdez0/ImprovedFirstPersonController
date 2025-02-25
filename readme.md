@@ -102,8 +102,8 @@ Certain features from the original package have been removed to streamline and o
 - CALL OF DUTY MWIII / MWII / WARZONE 2.0: <code>0.131</code>
 
 Example: I myself have a CSGO sensitivity of 2.3625 so in Unity I have that sens in CameraSensitivity and 0.436 as SensitivityConvertion.
-If I wanted to use my Valorant sensitivity inside Unity, now I should put 0.743 as CameraSensitivity (obtained by using [Same Aim](https://www.mouse-sensitivity.com/))and 1.387 as SensitivityConvertion.
-Id I wanted to get the SensitivityConvertion of Overwatch, I would go to [Same Aim](https://www.mouse-sensitivity.com/), get my sensitivity in that game (7.88) and apply a rule of 3, getting as 0.131 Overwatch's SensitivityConvertion
+If I wanted to use my Valorant sensitivity inside Unity, now I should put 0.743 as CameraSensitivity (obtained by using [Same Aim](https://www.mouse-sensitivity.com/)) and 1.387 as SensitivityConvertion.
+If I wanted to get the SensitivityConvertion of Overwatch, I would go to [Same Aim](https://www.mouse-sensitivity.com/), get my sensitivity in that game (7.88) and apply a rule of 3, getting as 0.131 Overwatch's SensitivityConvertion
 
 ### Additional Information
 
